@@ -1,3 +1,4 @@
+#Victor Eduardo Aleman Padilla 21310193
 def depth_limited_search(graph, start, goal, depth_limit):  # Esta línea define una función llamada depth_limited_search que toma cuatro parámetros
     visited = set()  # Conjunto para mantener los nodos visitados
     return dls_recursive(graph, start, goal, visited, depth_limit, 0) # Llama a la función dls_recursive con los parámetros iniciales para iniciar la búsqueda en profundidad limitada desde el nodo de inicio start con una profundidad actual de 0.
