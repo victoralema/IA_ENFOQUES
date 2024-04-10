@@ -1,3 +1,4 @@
+#Victor Eduardo Aleman Padilla 21310193
 import heapq   # Importa el módulo heapq, que proporciona funciones para implementar colas de prioridad (heaps) en Python.
 
 def uniform_cost_search(graph, start, goal): # Define una función llamada uniform_cost_search que toma tres argumentos
