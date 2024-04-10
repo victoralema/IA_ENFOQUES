@@ -1,3 +1,4 @@
+#Victor Eduardo Aleman Padilla 21310193
 def dfs(graph, start, visited=None):   #Esta línea define una función llamada dfs que toma tres parámetros: graph, start  y visited .
     if visited is None:  # erifica si el parámetro visited es None, lo cual ocurre solo en la primera llamada a la función.
         visited = set()  # Conjunto para almacenar nodos visitados
