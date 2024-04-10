@@ -1,3 +1,5 @@
+#Victor Eduardo Aleman Padilla 21310193
+
 from collections import deque # Importa la clase deque de la biblioteca collections, que se utiliza para implementar colas eficientes.
 
 def bidirectional_search(graph, start, goal): # Define la función bidirectional_search que realiza la Búsqueda Bidireccional en un grafo dado, con los parámetros graph (grafo representado como un diccionario de listas de adyacencia), start (nodo de inicio) y goal (nodo objetivo).
