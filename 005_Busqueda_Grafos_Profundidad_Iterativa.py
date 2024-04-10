@@ -1,3 +1,6 @@
+#Victor Eduardo Aleman Padilla 21310193
+
+
 def depth_limited_search(graph, start, goal, depth_limit):# Función para realizar la Búsqueda en Profundidad Limitada (DLS)
     visited = set()  # Conjunto para mantener los nodos visitados
     return dls_recursive(graph, start, goal, visited, depth_limit, 0)
