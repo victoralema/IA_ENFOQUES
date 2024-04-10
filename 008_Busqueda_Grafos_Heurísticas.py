@@ -1,3 +1,5 @@
+#Victor Eduardo Aleman Padilla 21310193
+
 import heapq # Importa el módulo heapq, que proporciona funciones para implementar colas de prioridad (heaps) en Python.
 
 def heuristic(node, goal):  #Define una función heuristic que calcula una heurística entre dos nodos. En este caso, utiliza la distancia Manhattan para estimar el costo desde node hasta goal.
