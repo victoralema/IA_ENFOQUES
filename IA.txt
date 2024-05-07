@@ -1,0 +1,43 @@
+138_Modelo_Racional
+Claro, este código sirve para implementar un modelo probabilístico que ayuda 
+a tomar decisiones sobre si llevar o no un paraguas y una chaqueta basándose en la probabilidad de que llueva y haga frío. 
+Aquí tienes una explicación paso a paso de cómo funciona:
+
+ 083_Graficos_por_Computador
+Este código implementa una estimación del valor de π utilizando el método de Monte Carlo. Aquí está cómo funciona:
+
+1. **Función `estimar_pi(num_puntos)`**: Esta función recibe como entrada el número de puntos (`num_puntos`) que se generarán aleatoriamente para estimar π. 
+Dentro de un bucle, genera coordenadas aleatorias (x, y) dentro del rango [-1, 1] y cuenta cuántos de estos puntos caen dentro del círculo de radio 1, centrado en el origen. 
+Los puntos dentro del círculo se identifican si su distancia al centro (0,0) es menor o igual a 1. Los puntos se representan en un gráfico de dispersión, siendo azules si están dentro del círculo y rojos si están fuera.
+
+2. **Estimación de π**: El valor de π se estima multiplicando por 4 la proporción de puntos dentro del círculo respecto al total de puntos generados.
+
+3. **Ejemplo de uso**: Se define el número de puntos (`num_puntos`) que se utilizarán para la estimación y se llama a la función `estimar_pi()` con este valor. 
+Luego se imprime el valor estimado de π y se muestra un gráfico con los puntos generados.
+
+Este método es un enfoque probabilístico para estimar π y es especialmente útil cuando se desea obtener una aproximación sin utilizar métodos analíticos complejos. 
+La precisión de la estimación aumenta a medida que se generan más puntos aleatorios.
+
+
+001_Busqueda en anchura
+Este código implementa el algoritmo de búsqueda en amplitud (BFS, por sus siglas en inglés) para recorrer un grafo. Aquí tienes una explicación detallada:
+
+1. **Función `bfs(graph, start)`**: Esta función toma dos argumentos: 
+el grafo representado como un diccionario de listas de adyacencia (`graph`) y el nodo de inicio (`start`) desde donde comenzará el recorrido BFS.
+
+2. **Inicialización**: Se inicializa un conjunto (`visited`) para almacenar los nodos que ya han sido visitados durante el recorrido y una cola (`queue`) que contendrá los nodos que están siendo procesados.
+
+3. **Bucle principal**: El bucle `while` se ejecuta mientras haya nodos en la cola `queue`. 
+En cada iteración, se saca un nodo de la cola usando `popleft()` (esto asegura que se procesen los nodos en el orden en que se agregaron, es decir, en amplitud). 
+
+4. **Procesamiento del nodo**: Se verifica si el nodo no ha sido visitado antes. 
+Si no ha sido visitado, se imprime (o se procesa de alguna otra manera, dependiendo de la aplicación) y se agrega al conjunto de nodos visitados.
+
+5. **Exploración de vecinos**: Se exploran los vecinos del nodo actual. 
+Si un vecino no ha sido visitado, se agrega a la cola para su posterior procesamiento.
+
+6. **Ejemplo de uso**: Se define un grafo como un diccionario de listas de adyacencia. 
+Luego, se llama a la función `bfs` con el nodo inicial `'A'` para comenzar el recorrido BFS desde ese nodo.
+
+El resultado será el recorrido BFS a partir del nodo inicial `'A'`, que imprimirá los nodos visitados en orden de amplitud. 
+Este algoritmo es útil para recorrer gráficos y encontrar la ruta más corta entre dos nodos en gráficos no ponderados.
